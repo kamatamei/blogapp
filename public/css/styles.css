@@ -1,0 +1,293 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	style.css
+
+*/
+
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: Theinhardt,sans-serif;
+font-weight:bold;
+padding-top: 25px;
+color: #FF6666;
+text-rendering: optimizeLegibility;
+}
+
+span.yellow{
+  color: #FF6600;
+  font-size:3em;
+}
+
+thead th,
+tbody th{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+div.f-article{
+  background-color:#fff;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+p.article{
+  margin:10px 20px;
+  padding-top:30px;
+  padding-bottom:30px;
+  font-size: 13px;
+}
+
+#particles-js {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: block;
+z-index: 0;
+}
+
+.menu{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+blockquote{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0 0 0 0;
+color:#000;
+/* background:#efefef url(css/img/gray_jean.png); */
+font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+font-size: 16px;
+/* 画像ファイルの指定 */
+background-image: url("./img/2.svg");
+/* 画像を常に天地左右の中央に配置 */
+background-position: center center;
+/* 画像をタイル状に繰り返し表示しない */
+background-repeat: no-repeat;
+/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+background-attachment: fixed;
+/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+background-size: cover;
+/* 背景画像が読み込まれる前に表示される背景のカラー */
+background-color: #464646;
+}
+
+#wrap{
+width:100%;
+background:#fff;
+margin:30px auto 30px auto;
+padding:0 2%;
+border:1px solid #ccc;
+}
+
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+background:#fff;
+}
+
+	#link-top{
+	display:none;
+	}
+
+/* NAV BAR*/
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width: 100%;
+background:#000;
+color:#fff;
+z-index:1000;
+}
+
+	.navbar #logo{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0.5em 1em;
+	font-size: 1.7em;
+	color:#efefef;
+	text-decoration:none;
+	}
+
+	.navbar span{
+	color:#86dc00;
+	}
+
+
+	.navbar ul{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}
+
+		.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+		}
+
+		.navbar li a{
+		display:inline-block;
+		color:#efefef;
+		padding:1em 1.3em;
+		text-decoration:none;
+		text-transform: uppercase;
+		line-height:100%;
+		font-size: 1.2em;
+		}
+
+.callout{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+}
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
+	 .callout i.icon-4x{font-size:6em;}
+	 .callout h4{margin-bottom:30px;}
+	 .callout-top{margin:50px 0 0 0;}
+	 .callout p{margin-bottom:0;}
+	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
+
+#mc_embed_signup{
+padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
+}
+
+.container-1 {
+  width: 80%;
+  margin: 10% 40% 40% 10%;
+  padding-bottom: 10%;
+  background-color: rgba(250,235,215,0.85);
+  border-radius: 50px;
+}
+
+.container {
+  width: 380px;
+  margin: 10% 30%;
+}
+
+ul > li {
+  padding: 3px 0;
+}
+
+.pull-right {
+  margin-top: 5px;
+  float: right;
+}
+
+.fs24, li.fs24, p.fs24{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.fs14, li.fs14, p.fs14{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px;
+}
+
+textarea {
+  padding: 5px;
+  width: 70%;
+  height: 80px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.flash_message {
+  text-align: center;
+  padding: 5px;
+  color: green;
+  background: Lavender;
+}
+
+.error {
+  font-size: 12px;
+  color: tomato;
+  padding: 3px 0;
+  display: block;
+}
+
+#newversion {
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	margin-left: 230px;
+	z-index: 100;
+	background-color: rgba(255,69,0,0.6);
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	box-shadow: 0 1px 1px #000;
+}
+#newversion h2 {
+	font-size: 43px;
+	margin: 0;
+	padding: 30px 0px 0px 0px;
+	color: #FFFFFF;
+	font-style: normal;
+}
+#newversion a {
+	text-decoration: none;
+	padding: 0px 20px 20px 20px;
+	display: block;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+#newversion a:hover span {
+	text-decoration: underline;
+}
